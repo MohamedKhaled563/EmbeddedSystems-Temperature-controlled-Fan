@@ -1,0 +1,17 @@
+/***********************************************************************
+ *
+ *  Module: PWM
+ *
+ *  File Name: pwm.h
+ *
+ *  Description: Header file for PWM module.
+ *
+ *  Author: Mohamed Khaled
+ *
+***********************************************************************/
+#ifndef PWM_H_
+#define PWM_H_
+
+
+
+#endif /* PWM_H_ */

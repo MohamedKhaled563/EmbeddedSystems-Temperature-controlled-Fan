@@ -1,0 +1,20 @@
+/***********************************************************************
+ *
+ *  Module: DCMotor
+ *
+ *  File Name: dc_motor.h
+ *
+ *  Description: Header file for DC Motor module.
+ *
+ *  Author: Mohamed Khaled
+ *
+***********************************************************************/
+
+
+
+#ifndef DC_MOTOR_H_
+#define DC_MOTOR_H_
+
+
+
+#endif /* DC_MOTOR_H_ */

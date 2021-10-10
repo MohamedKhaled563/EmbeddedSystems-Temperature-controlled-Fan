@@ -1,0 +1,61 @@
+/*
+ *
+ * Module: Application
+ *
+ * File Name: fanController.c
+ *
+ * Description: Source file for application module
+ *
+ * Author: Mohamed Khaled
+ *
+ */
+#include "lcd.h"
+#include "lm35_sensor.h"
+#include "dc_motor.h"
+
+int main ( void )
+{
+	/* LCD initialization */
+	LCD_init();
+	LCD_moveCursore(0, 5);
+	LCD_displayString("Fan is ");
+	LCD_moveCursore(1, 5);
+	LCD_displayString("Temp = ");
+	uint8 temp = LM35_getTemperature();
+	LCD_moveCursor(1, 12);
+	LCD_integerToString(temp);
+	LCD_displayString(" C");
+
+	/* DC motor initialization */
+	DcMotor_Init();
+	DcMotor_State state = STOP;
+	DcMotor_Rotate(state, 0);
+
+	while(1)
+	{
+		/* Displaying temperature on LCD */
+		temp = LM35_getTemperature();
+		LCD_moveCursor(1, 12);
+		LCD_integerToString(temp);
+		LCD_displayString(" C");
+
+		/* Displaying fan status and operate motor according to temperature */
+		if(temp < 30)
+		{
+			DcMotor_Rotate
+		}
+		if(temp < 100)
+		{
+			LCD_intgerToString(temp);
+			LCD_displayCharacter(' ');
+		}
+		else
+		{
+			LCD_intgerToString(temp);
+		}
+	}
+
+
+
+	return 0;
+}

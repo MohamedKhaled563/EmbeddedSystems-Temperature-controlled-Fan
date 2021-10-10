@@ -1,0 +1,2678 @@
+08:35:07 **** Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:145: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./fanController.o ./gpio.o ./lcd.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o:(.init9+0x0): undefined reference to `main'
+make: *** [Project3.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:35:40 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./fanController.o ./gpio.o ./lcd.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7252 bytes (44.3% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:39:44 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+../fanController.c: In function 'main':
+../fanController.c:19: error: too few arguments to function 'LCD_intgerToString'
+make: *** [fanController.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:39:55 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:145: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+../lm35_sensor.c:15:17: error: adc.h: No such file or directory
+../lm35_sensor.c: In function 'LM35_getTemperature':
+../lm35_sensor.c:28: warning: implicit declaration of function 'ADC_readChannel'
+../lm35_sensor.c:31: error: 'ADC_REF_VOLT_VALUE' undeclared (first use in this function)
+../lm35_sensor.c:31: error: (Each undeclared identifier is reported only once
+../lm35_sensor.c:31: error: for each function it appears in.)
+../lm35_sensor.c:31: error: 'ADC_MAXIMUM_VALUE' undeclared (first use in this function)
+make: *** [lm35_sensor.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:41:09 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:145: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8586 bytes (52.4% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:43:47 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8590 bytes (52.4% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:45:10 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8598 bytes (52.5% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:46:35 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8628 bytes (52.7% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:21:52 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:14:
+../adc.h:34: error: expected specifier-qualifier-list before 'ADC_Prescaler'
+../adc.h:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:22:22 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:14:
+../adc.h:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:22:27 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:14:
+../adc.h:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:22:58 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:14:
+../adc.h:34: error: field 'prescaler' has incomplete type
+../adc.h:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:23:05 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+In file included from ../adc.c:14:
+../adc.h:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:48:27 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+../adc.c: In function 'ADC_init':
+../adc.c:43: error: expected ';' before '}' token
+make: *** [adc.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+08:48:34 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:145: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8734 bytes (53.3% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:49:21 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8736 bytes (53.3% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:49:45 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8756 bytes (53.4% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:50:44 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8756 bytes (53.4% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:51:11 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8746 bytes (53.4% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:51:33 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8746 bytes (53.4% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:53:11 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8726 bytes (53.3% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:53:46 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8724 bytes (53.2% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:54:21 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8724 bytes (53.2% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:54:52 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8726 bytes (53.3% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+08:55:26 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8746 bytes (53.4% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:01:46 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"adc.d" -MT"adc.o" -c -o "adc.o" "../adc.c"
+Finished building: ../adc.c
+ 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:145: warning: implicit declaration of function 'itoa'
+Finished building: ../lcd.c
+ 
+Building file: ../lm35_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lm35_sensor.d" -MT"lm35_sensor.o" -c -o "lm35_sensor.o" "../lm35_sensor.c"
+Finished building: ../lm35_sensor.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8884 bytes (54.2% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:04:15 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8992 bytes (54.9% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:05:14 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+../fanController.c: In function 'main':
+../fanController.c:21: warning: unused variable 'state'
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9002 bytes (54.9% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:05:21 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9002 bytes (54.9% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:05:35 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9004 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:06:00 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9004 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:06:55 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+../dc_motor.c: In function 'DcMotor_Rotate':
+../dc_motor.c:68: warning: implicit declaration of function 'PWM_Timer0_Start'
+Finished building: ../dc_motor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9012 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:07:55 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9010 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:08:07 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9010 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:08:18 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9008 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:08:38 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9008 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:08:55 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9008 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:09:00 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9008 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:09:10 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9008 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:09:18 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9008 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:09:24 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9008 bytes (55.0% Full)
+(.text + .data + .bootloader)
+
+Data:        272 bytes (26.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:26:20 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+../fanController.c: In function 'main':
+../fanController.c:20: warning: implicit declaration of function 'LCD_moveCursore'
+../fanController.c:26: warning: implicit declaration of function 'LCD_integerToString'
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+./fanController.o: In function `main':
+../fanController.c:20: undefined reference to `LCD_moveCursore'
+../fanController.c:22: undefined reference to `LCD_moveCursore'
+../fanController.c:26: undefined reference to `LCD_integerToString'
+../fanController.c:40: undefined reference to `LCD_integerToString'
+make: *** [Project3.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:27:01 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+../fanController.c: In function 'main':
+../fanController.c:20: warning: implicit declaration of function 'LCD_moveCursore'
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+./fanController.o: In function `main':
+../fanController.c:20: undefined reference to `LCD_moveCursore'
+../fanController.c:22: undefined reference to `LCD_moveCursore'
+make: *** [Project3.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:27:10 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9178 bytes (56.0% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (28.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:27:13 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9178 bytes (56.0% Full)
+(.text + .data + .bootloader)
+
+Data:        288 bytes (28.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:28:13 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9270 bytes (56.6% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:28:28 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9270 bytes (56.6% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:28:52 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9270 bytes (56.6% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:29:42 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9270 bytes (56.6% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:33:28 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9276 bytes (56.6% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:35:30 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9056 bytes (55.3% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:35:40 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9056 bytes (55.3% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:35:47 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9056 bytes (55.3% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:35:54 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9056 bytes (55.3% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:36:02 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9056 bytes (55.3% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:36:14 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9276 bytes (56.6% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:53:55 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:54:14 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:54:22 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:59:22 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9106 bytes (55.6% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:59:42 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9106 bytes (55.6% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:59:56 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9106 bytes (55.6% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:05 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+../pwm.c: In function 'PWM_Timer0_Start':
+../pwm.c:38: warning: large integer implicitly truncated to unsigned type
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9046 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:13 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:25 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9130 bytes (55.7% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:00:33 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9130 bytes (55.7% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:07 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9112 bytes (55.6% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:20 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9112 bytes (55.6% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:01:54 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9112 bytes (55.6% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:02:51 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:04:01 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:04:21 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:04:34 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:04:43 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:06:04 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:06:11 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:06:18 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:06:41 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:07:18 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:07:42 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:08:29 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:08:55 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9078 bytes (55.4% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:09:13 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9112 bytes (55.6% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:09:27 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9048 bytes (55.2% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:10:05 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"pwm.d" -MT"pwm.o" -c -o "pwm.o" "../pwm.c"
+Finished building: ../pwm.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9130 bytes (55.7% Full)
+(.text + .data + .bootloader)
+
+Data:        284 bytes (27.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:10:22 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9356 bytes (57.1% Full)
+(.text + .data + .bootloader)
+
+Data:        298 bytes (29.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:24:38 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9382 bytes (57.3% Full)
+(.text + .data + .bootloader)
+
+Data:        299 bytes (29.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:25:04 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9388 bytes (57.3% Full)
+(.text + .data + .bootloader)
+
+Data:        299 bytes (29.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:29:48 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../dc_motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"dc_motor.d" -MT"dc_motor.o" -c -o "dc_motor.o" "../dc_motor.c"
+Finished building: ../dc_motor.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9374 bytes (57.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (29.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:34:28 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9214 bytes (56.2% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (28.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:42:06 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9214 bytes (56.2% Full)
+(.text + .data + .bootloader)
+
+Data:        294 bytes (28.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:43:24 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9258 bytes (56.5% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (29.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:45:38 **** Incremental Build of configuration Debug for project Project3 ****
+make all 
+Building file: ../fanController.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"fanController.d" -MT"fanController.o" -c -o "fanController.o" "../fanController.c"
+Finished building: ../fanController.c
+ 
+Building target: Project3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Project3.map -mmcu=atmega16 -o "Project3.elf"  ./adc.o ./dc_motor.o ./fanController.o ./gpio.o ./lcd.o ./lm35_sensor.o ./pwm.o   
+Finished building target: Project3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Project3.elf  >"Project3.lss"
+Finished building: Project3.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Project3.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9374 bytes (57.2% Full)
+(.text + .data + .bootloader)
+
+Data:        300 bytes (29.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
